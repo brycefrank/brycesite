@@ -2,29 +2,36 @@
     font-family: 'Courier New', Courier, monospace;
 }
 
-.wrapper {
-    max-width: 860px;
-    margin: auto
+.container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap
 }
 
-div {
-    display: block
+.content-block {
+    width: 1200px;
+    display: flex
 }
 
-header {
-    width: 270px;
-    float: left;
-    position: fixed;
+.figure {
+    width: 300px;
+    margin-top: 100px
 }
+
+.navbar {
+    font-size: 14px;
+}
+
 
 section {
-    width: 400px;
-    float: right;
-    font-size: 12px;
+    font-size: 20px;
+    width: 600px;
+    margin-right:100px
 }
 
 @media (max-width:700px) {
-    header, section {
+    .content-block {
         float: none;
         position: static;
         width: auto;
